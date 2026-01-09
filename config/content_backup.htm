@@ -312,8 +312,19 @@ ds.enable(timestep)</pre>
 <h1>w17</h1>
 <p><em><span>w17: 如何實作一套 </span><a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a><span><span> </span>與<span> </span></span><a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a><span>？(</span><a href="https://la.disneyresearch.com/publication/design-and-control-of-a-bipedal-robotic-character/">Disney Bipedal Robot</a><span>)</span><br/>          </em></p>
 <p data-end="273" data-start="96">本實作先使用 <strong data-end="127" data-start="103">SolveSpace 與 Onshape</strong> 進行 5-bar Linkage Plotter 與 Openduck mini（Disney Bipedal Robot）的機構設計與尺寸規劃，完成各連桿與本體之 CAD 建模後，將模型匯出為 <strong data-end="239" data-start="226">STL 或 DAE</strong> 等格式，再匯入 <strong data-end="258" data-start="248">Webots</strong> 作為機器人與場景的外觀模型。</p>
-<p data-end="472" data-start="275">在 Webots 中，針對匯入的 CAD 模型重新建立 <strong data-end="325" data-start="303">Solid 與 HingeJoint</strong> 結構，設定各關節的馬達控制、碰撞物件（boundingObject）與物理參數（Physics）。5-bar Linkage Plotter 透過運動學計算將繪圖軌跡轉換為兩主動關節角度，以控制末端點完成繪圖；Openduck mini 則透過雙足關節協調與步態規劃，實現基本行走與平衡動作。</p><h1>w18</h1>
+<p data-end="472" data-start="275">在 Webots 中，針對匯入的 CAD 模型重新建立 <strong data-end="325" data-start="303">Solid 與 HingeJoint</strong> 結構，設定各關節的馬達控制、碰撞物件（boundingObject）與物理參數（Physics）。5-bar Linkage Plotter 透過運動學計算將繪圖軌跡轉換為兩主動關節角度，以控制末端點完成繪圖；Openduck mini 則透過雙足關節協調與步態規劃，實現基本行走與平衡動作。</p>
+<h1>w18</h1>
 <p><span>w18: 課程總結</span></p>
-<p data-end="288" data-start="110">這門課從零組件設計一路做到模擬與控制，讓我第一次實際接觸到機構設計與機器人模擬整合的流程。一開始在4連桿的部分，使用 SolveSpace 與 Onshape 畫連桿與零件，過程中比較能理解平面機構的運動關係；而 Openduck mini 是成員畫的，主要用 Onshape 建模，結構較複雜，在將模型匯入 Webots 後，才發現和單純畫圖差很多。模型匯進來之後如果沒有設定關節、碰撞與物理參數，機構是無法正常運動的，透過實際操作 Webots，逐步加入馬達與關節控制，才慢慢理解模擬環境中動態行為是怎麼產生的，後續使用 Python 進行控制時，讓我把前面學到的機構概念實際用在控制上，這門課讓我不是只停留在畫圖或寫程式，而是能把設計、模擬與控制串在一起，對之後做專題或相關課程都有幫助。</p><h1>plotter 操作影片</h1>
+<p data-end="288" data-start="110">這門課從零組件設計一路做到模擬與控制，第一次實際接觸到機構設計與機器人模擬整合的流程。一開始在4連桿的部分，使用 SolveSpace 與 Onshape 畫連桿與零件，過程中比較能理解平面機構的運動關係；而 Openduck mini 是成員畫的，主要用 Onshape 建模，結構較複雜，在將模型匯入 Webots 後，才發現和單純畫圖差很多。模型匯進來之後如果沒有設定關節、碰撞與物理參數，機構是無法正常運動的，透過實際操作 Webots，逐步加入馬達與關節控制，才慢慢理解模擬環境中動態行為是怎麼產生的，後續使用 Python 進行控制時，讓我把前面學到的機構概念實際用在控制上，這門課讓我不是只停留在畫圖或寫程式，而是能把設計、模擬與控制串在一起，對之後做專題或相關課程都有幫助。</p>
+<h1>plotter 操作影片</h1>
 <p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="542" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jllrJDAdpNI" title="webots plotter 操作步驟" width="1019"></iframe></p>
+<h1>Final</h1>
+<p><span>題目一</span>:</p>
+<p style="text-align: left;">請依照繪圖機的起始狀態，利用 cylinder 建立右邊的馬達，以 box 建立 link 1，然後設法建立控制程式，讓 link 1 以順時針角度旋轉 75 度至水平位置，從開啟 Webots 至完成 link 1 旋轉至水平位置，請以 sharex 將操作過程拍攝為 mp4 影片，上傳至 Youtube，影片標題請命名為"學號 - 2025 電腦輔助設計與實習期末考週 2b 題目一"，之後將影片嵌入個人網頁的 H1 格式標題為 Final 的頁面中。</p>
+<p></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="533" referrerpolicy="strict-origin-when-cross-origin" src="//www.youtube.com/embed/5Hd7LIz_7AQ" title="41323143 - 2025 電腦輔助設計與實習期末考週 2a 題目一" width="1000"></iframe></p>
+<p><span>題目二</span>:</p>
+<p>請讓 link 1 回到繪圖機的起始狀態角度後，以 box 建立 link 2，然後設法建立控制程式，讓 link 2 以順時針角度旋轉 80 度至與 link 1 水平位置，從接續 link 1 至完成 link 2 旋轉至與 link 1 水平對齊位置，請以 sharex 拍攝 mp4 影片，上傳至 Youtube，影片標題請命名為"學號 - 2025 電腦輔助設計與實習期末考週 2b 題目二"，之後將影片嵌入個人網頁的 H1 格式標題為 Final 的頁面中。</p>
+<p></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="533" referrerpolicy="strict-origin-when-cross-origin" src="//www.youtube.com/embed/_kpPpBeerBE" title="41323143 - 2025 電腦輔助設計與實習期末考週 2a 題目二" width="1000"></iframe></p>

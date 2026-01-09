@@ -2,7 +2,7 @@
         <head>
         <title>cad2025_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a><li><a href='w10.html'>w10</a><li><a href='w14.html'>w14</a><li><a href='w17.html'>w17</a><li><a href='w18.html'>w18</a><li><a href='plotter 操作影片.html'>plotter 操作影片</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a><li><a href='w10.html'>w10</a><li><a href='w14.html'>w14</a><li><a href='w17.html'>w17</a><li><a href='w18.html'>w18</a></li></ul><li><a href='plotter 操作影片.html'>plotter 操作影片</a><li><a href='Final.html'>Final</a></li>
                       </ul>
                 </nav>
               </div>
@@ -145,7 +145,8 @@ img.add_border {
     <div id="tipue_search_content">w14 << <a href='w14.html'>Previous</a> <a href='w18.html'>Next</a> >> w18<br /><h1>w17</h1>
 <p><em><span>w17: 如何實作一套 </span><a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a><span><span> </span>與<span> </span></span><a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a><span>？(</span><a href="https://la.disneyresearch.com/publication/design-and-control-of-a-bipedal-robotic-character/">Disney Bipedal Robot</a><span>)</span><br/>          </em></p>
 <p data-end="273" data-start="96">本實作先使用 <strong data-end="127" data-start="103">SolveSpace 與 Onshape</strong> 進行 5-bar Linkage Plotter 與 Openduck mini（Disney Bipedal Robot）的機構設計與尺寸規劃，完成各連桿與本體之 CAD 建模後，將模型匯出為 <strong data-end="239" data-start="226">STL 或 DAE</strong> 等格式，再匯入 <strong data-end="258" data-start="248">Webots</strong> 作為機器人與場景的外觀模型。</p>
-<p data-end="472" data-start="275">在 Webots 中，針對匯入的 CAD 模型重新建立 <strong data-end="325" data-start="303">Solid 與 HingeJoint</strong> 結構，設定各關節的馬達控制、碰撞物件（boundingObject）與物理參數（Physics）。5-bar Linkage Plotter 透過運動學計算將繪圖軌跡轉換為兩主動關節角度，以控制末端點完成繪圖；Openduck mini 則透過雙足關節協調與步態規劃，實現基本行走與平衡動作。</p><br />w14 << <a href='w14.html'>Previous</a> <a href='w18.html'>Next</a> >> w18</div>
+<p data-end="472" data-start="275">在 Webots 中，針對匯入的 CAD 模型重新建立 <strong data-end="325" data-start="303">Solid 與 HingeJoint</strong> 結構，設定各關節的馬達控制、碰撞物件（boundingObject）與物理參數（Physics）。5-bar Linkage Plotter 透過運動學計算將繪圖軌跡轉換為兩主動關節角度，以控制末端點完成繪圖；Openduck mini 則透過雙足關節協調與步態規劃，實現基本行走與平衡動作。</p>
+<br />w14 << <a href='w14.html'>Previous</a> <a href='w18.html'>Next</a> >> w18</div>
         
     <!-- footer -->
       <div class="container">
